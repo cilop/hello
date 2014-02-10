@@ -1,7 +1,8 @@
-# Author Roberto Alvarez (robertoatc02@gmail.com)
-# Default is World!
+# No comments on top
+require 'greeter'
 
+# Default is World
 name = ARGV.first || "World"
 
-puts "Hello, #{name}!"
-
+greeter = Greeter.new(name)
+puts greeter.greet
